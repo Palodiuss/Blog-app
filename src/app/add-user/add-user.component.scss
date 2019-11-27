@@ -116,3 +116,12 @@
     }
 }
 
+@media (max-width: 760px) {
+	.wrapper {
+	  width: 95vw;
+	}
+	.user-form {
+	  width: 100%;
+	  padding: 0;
+	}
+  }

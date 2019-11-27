@@ -242,3 +242,20 @@
     padding: 10px 0;
     
 }
+
+
+@media (max-width: 900px) {
+	.wrapper {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+	}
+	.user-form {
+	  width: 100%;
+	  padding: 0;
+  }
+  
+  .posts-list {
+    width: 100%;
+  }
+  }
