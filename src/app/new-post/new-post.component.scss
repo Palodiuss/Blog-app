@@ -107,3 +107,13 @@
     font-family: Montserrat, sans-serif;
     font-size: 14px;
 }
+
+@media (max-width: 760px) {
+  .wrapper {
+    width: 100%;
+  }
+  .post-form {
+    width: 100%;
+    padding: 0;
+  }
+}
