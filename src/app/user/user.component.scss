@@ -1,0 +1,244 @@
+
+
+.wrapper {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 350px 520px;
+    column-gap: 20px;
+
+
+}
+
+
+.error {
+    margin-top: 20px;
+    height: 20px;
+    width: 100%;
+    padding: 7px 0;
+    color: #fff;
+    background-color: #0176FF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+
+.user-container{
+	max-width:350px;
+	margin:50px auto;
+	background:#fff;
+	border-radius:2px;
+	font-family: Montserrat, sans-serif;
+}
+
+.address {
+    height: 70px;
+}
+
+.user-container ul{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+.user-container li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+
+}
+
+.user-container li > span{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 12px;
+	overflow: hidden;
+	font-family: Montserrat, sans-serif;
+}
+.user-container p
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 20px;
+	line-height: 25px;
+	font-size: 14px;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+}
+.wide-span {
+    margin-left: 20px;
+}
+
+
+.button
+{
+    width: 100px;
+    border: none;
+    background: white;
+    color: #404040;
+    border-bottom: 5px solid #0176FF;
+
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    border-bottom: 5px solid #2196F3;
+    transition: 0.3s;
+
+    &:hover {
+        background: #0176FF;
+        color: white;
+        border-bottom: 5px solid #2196F3;
+    }
+}
+
+.posts-container{
+    margin-top: 50px;
+}
+
+
+
+.post-form{
+    max-width: 500px;
+    margin:20px auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .post-form ul{
+    list-style:none;
+    padding:0;
+    margin:0;	
+  }
+  .post-form li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+  
+  }
+  
+  .post-form li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+  }
+  .post-form input[type="text"],
+  .post-form input[type="date"],
+  .post-form input[type="datetime"],
+  .post-form input[type="email"],
+  .post-form input[type="number"],
+  .post-form input[type="search"],
+  .post-form input[type="time"],
+  .post-form input[type="url"],
+  .post-form input[type="password"],
+  .post-form input[type="tel"],
+  .post-form textarea,
+  .post-form select 
+  {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 35px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .post-form li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .post-form textarea{
+      height: 70px;
+    resize:none;
+  }
+  .post-form input[type="submit"]
+  {
+      
+      border: none;
+      background: white;
+      color: #404040;
+      border-bottom: 5px solid #0176FF;
+  
+      text-transform: uppercase;
+      padding: 1em;
+      cursor: pointer;
+      font-family: 'Montserrat';
+      border-bottom: 5px solid #2196F3;
+      transition: 0.3s;
+  
+      &:hover {
+          background: #0176FF;
+          color: white;
+          border-bottom: 5px solid #2196F3;
+      }
+  }
+
+
+
+.posts-list{
+    display: flex;
+    flex-direction: column;
+
+    width: 520px;
+
+}
+
+.post {
+    color: #404040;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding:  0 20px;
+    
+}
+
+
+
+
+.post-title {
+    cursor: pointer;
+}
+
+.post-body {
+    font-family: merriweather,serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    
+}

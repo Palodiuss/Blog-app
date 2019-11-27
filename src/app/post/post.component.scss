@@ -1,0 +1,164 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+    color: #404040;
+}
+
+.posts-container {
+    margin-bottom: 30px;
+
+}
+
+.post {
+    margin-top: 30px;
+    width: 100%;
+    color: #404040;
+    display:flex;
+    flex-direction: column;  
+}
+
+.post-body {
+    font-family: merriweather,serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    
+}
+
+h1 {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    line-height: 1;
+    font-weight: 800;
+    font-size: 48px;
+    margin: 0;  
+}
+
+.section-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #0176FF;  
+}
+
+.comment-name {
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+
+.comment-body {
+    font-family: merriweather, serif;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.comment-form{
+    max-width: 500px;
+    margin:20px auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .comment-form ul{
+    list-style:none;
+    padding:0;
+    margin:0;	
+  }
+  .comment-form li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+  
+  }
+  
+  .comment-form li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+  }
+  .comment-form input[type="text"],
+  .comment-form input[type="date"],
+  .comment-form input[type="datetime"],
+  .comment-form input[type="email"],
+  .comment-form input[type="number"],
+  .comment-form input[type="search"],
+  .comment-form input[type="time"],
+  .comment-form input[type="url"],
+  .comment-form input[type="password"],
+  .comment-form input[type="tel"],
+  .comment-form textarea,
+  .comment-form select 
+  {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 35px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .comment-form li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .comment-form textarea{
+      height: 70px;
+    resize:none;
+  }
+  .comment-form input[type="submit"]
+  {
+      
+      border: none;
+      background: white;
+      color: #404040;
+      border-bottom: 5px solid #0176FF;
+  
+      text-transform: uppercase;
+      padding: 1em;
+      cursor: pointer;
+      font-family: 'Montserrat';
+      border-bottom: 5px solid #2196F3;
+      transition: 0.3s;
+  
+      &:hover {
+          background: #0176FF;
+          color: white;
+          border-bottom: 5px solid #2196F3;
+      }
+  }

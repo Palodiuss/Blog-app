@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300&display=swap');
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+$blue: #1976D2;
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    a {
+        color: white;
+    }
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}

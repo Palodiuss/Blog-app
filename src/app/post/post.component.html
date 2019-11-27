@@ -1,0 +1,50 @@
+<div class="wrapper" *ngIf="post && comments">
+  <div class="posts-container">
+    <div class="post" *ngIf="post">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <span class="post-body">{{ post.body }}</span>
+    </div>
+    <span class="section-line" *ngIf="comments.length"></span>
+  </div>
+
+  <div class="comments-container" *ngIf="comments">
+    <div class="comment" *ngFor="let comment of comments">
+      <span class="comment-name">{{ comment.name }}</span>
+      <p class="comment-body">{{ comment.body }}</p>
+    </div>
+  </div>
+
+  <span class="section-line"></span>
+  <form class="comment-form" [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <ul>
+      <li>
+        <label>Name</label>
+        <input type="text" formControlName="name" />
+        <div *ngIf="submitted && commentForm.controls.name.errors" class="error">
+            <div *ngIf="commentForm.controls.name.errors.required">
+                Author's name is required
+            </div>
+          </div>
+      </li>
+      <li>
+        <label>Email</label> <input type="text" formControlName="email" />
+        <div *ngIf="submitted && commentForm.controls.email.errors" class="error">
+            <div *ngIf="commentForm.controls.email.errors.required">
+              Author's email is required
+            </div>
+            <div *ngIf="commentForm.controls.email.errors.email">It has to be an email address</div>
+          </div>
+      </li>
+
+      <li>
+        <label>Coment</label> <textarea formControlName="body"></textarea>
+        <div *ngIf="submitted && commentForm.controls.body.errors" class="error">
+            <div *ngIf="commentForm.controls.body.errors.required">
+              Comment can not be empty
+            </div>
+          </div>
+      </li>
+      <input type="submit" value="ADD A COMMENT" class="button" />
+    </ul>
+  </form>
+</div>

@@ -1,0 +1,70 @@
+<div class="wrapper">
+    <form class="user-form" *ngIf="user" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <ul>
+
+ <li>
+    <label>
+        First Name:
+    </label>
+    <input type="text" formControlName="first_name">
+      <div *ngIf="submitted && userForm.controls.first_name.errors" class="error">
+      <div *ngIf="userForm.controls.first_name.errors.required">User first name is required</div>
+      </div>
+
+
+ </li>
+
+    <li>
+        <label>
+            Last Name:
+          </label>
+            <input type="text" formControlName="last_name">
+            <div *ngIf="submitted && userForm.controls.last_name.errors" class="error" last>
+              <div *ngIf="userForm.controls.last_name.errors.required">User last name is required</div>
+            </div>
+    </li>
+
+
+    <li>
+        <label>
+            Email: 
+          </label>
+            <input type="email" formControlName="email">
+            <div *ngIf="submitted && userForm.controls.email.errors" class="error" last>
+              <div *ngIf="userForm.controls.email.errors.required">User email is required</div>
+              <div *ngIf="userForm.controls.email.errors.email">It has to be an email address</div>
+            </div>
+    </li>
+
+
+    <li>
+        <label>
+            Phone: 
+          </label>
+            <input type="tel" formControlName="phone">
+            <div *ngIf="submitted && userForm.controls.phone.errors" class="error" last>
+              <div *ngIf="userForm.controls.phone.errors.required">User phone number is required</div>
+              <div *ngIf="userForm.controls.phone.errors.pattern">It has to be a number</div>
+            </div>
+
+    </li>
+
+          
+          
+      <li>
+          <label>
+              Adress:
+            </label>
+              <textarea formControlName="address"></textarea>
+              <div *ngIf="submitted && userForm.controls.address.errors" class="error">
+                <div *ngIf="userForm.controls.address.errors.required">An adress is required</div>
+              </div>
+
+      </li>
+
+    
+        <input type="submit" value="SAVE" class="button">
+        <button class="button" routerLink="/users">CANCEL</button>
+      </ul>
+      </form>
+</div>
