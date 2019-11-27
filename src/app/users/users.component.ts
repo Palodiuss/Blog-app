@@ -8,8 +8,8 @@ import {DataService} from '../data.service';
 })
 export class UsersComponent implements OnInit {
 
-  users: Object;
-  user: Object;
+  users: any;
+  user: any;
   page: number;
   allPages: number
 

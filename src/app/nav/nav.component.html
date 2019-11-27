@@ -1,13 +1,18 @@
-<header>
-    <div class="container">
+<header class="header">
+  <div class="container">
+    
+    <nav>
         <a routerLink="/" class="logo">Poster</a>
-        <nav>
-            <ul>
-                <li><a routerLink="/">Feed</a></li>
-                <li><a routerLink="/users">Users</a></li>
-                <li><a routerLink="/add_post">New post</a></li>
-                <li><a routerLink="/add_user">New user</a></li>
-            </ul>
-        </nav>
-    </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a routerLink="/">Feed</a></li>
+        <li><a routerLink="/users">Users</a></li>
+        <li><a routerLink="/add_post">New post</a></li>
+        <li><a routerLink="/add_user">New user</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

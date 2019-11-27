@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class UserComponent implements OnInit {
   user: any;
   userForm: FormGroup;
-  posts: Object;
+  posts: any;
   submitted = false;
   success = false;
 

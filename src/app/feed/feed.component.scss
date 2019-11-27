@@ -78,3 +78,21 @@ h1 {
     width: 150px;
     align-self: flex-end;
 }
+
+@media (max-width: 760px) { 
+    .wrapper {
+        width: 100%;
+    }
+
+    .posts-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .post-body {
+        font-size: 14px;
+    }
+}
